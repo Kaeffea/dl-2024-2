@@ -18,8 +18,7 @@ class Perceptron:
         b = np.ones((X.shape[0], 1))
         xplusb = np.hstack((X, b))
         return xplusb
-
-  
+        
     def activation(self, x):
         sgn = np.where(x <= 0, -1, 1)
         return sgn
